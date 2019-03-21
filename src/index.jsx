@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HelloMessage from './components/container/HelloMessage';
 
 const App = () => (
-  <h1>Hello world</h1>
+  <HelloMessage />
 );
 
 const wrapper = document.getElementById('root');
