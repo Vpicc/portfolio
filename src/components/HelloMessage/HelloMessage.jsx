@@ -16,7 +16,7 @@ class HelloMessage extends Component {
 
   typingIsDone() {
     const { handler } = this.props;
-    this.setState({ classes: `${Style.hello} ${Style.helloTypingDone} display-4` });
+    this.setState({ classes: `${Style.hello} ${Style.helloDoneTyping} display-4` });
     handler();
   }
 
@@ -26,7 +26,7 @@ class HelloMessage extends Component {
     return (
       <h1 className={classes}>
         <Typist
-          cursor={{ show: true, hideWhenDone: true, hideWhenDoneDelay: 2150 }}
+          cursor={{ show: true, hideWhenDone: true, hideWhenDoneDelay: 0 }}
           onTypingDone={this.typingIsDone}
         >
         Hello
