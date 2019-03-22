@@ -17,6 +17,8 @@
 
 .transparent {
     background-color: transparent;
+    transition: z-index .5s ease-in;
+    z-index:-2;
 }
 
 @keyframes expand {
