@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import SplashScreen from './components/SplashScreen/SplashScreen';
 
 const App = () => (
-  <SplashScreen />
+  <>
+    <SplashScreen />
+  </>
 );
 
 const wrapper = document.getElementById('root');

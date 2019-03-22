@@ -6,7 +6,7 @@
     height: 150vmax;
     border-radius: 100%;
     z-index: 1;
-    background-color: black;
+    background-color: rgb(17, 18, 22);
     transform: translate(-50%, -50%);
 }
 
@@ -23,12 +23,12 @@
     from {
         width: 0vmin;
         height: 0vmin;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 1);
+        box-shadow: 0 0 0 100vmax rgb(17, 18, 22);
     }
 
     to {
         width: 150vmax;
         height: 150vmax;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 1);
+        box-shadow: 0 0 0 100vmax rgb(17, 18, 22);
     }
 }
