@@ -6,14 +6,17 @@
     height: 150vmax;
     border-radius: 100%;
     z-index: 1;
-    background-color: red;
+    background-color: black;
     transform: translate(-50%, -50%);
 }
 
 .transition {
     animation-name: expand;
     animation-duration: 1s;
-    animation-delay: 3s;
+}
+
+.transparent {
+    background-color: transparent;
 }
 
 @keyframes expand {

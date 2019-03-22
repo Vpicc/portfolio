@@ -1,8 +1,30 @@
-import React from 'react';
-import Style from './style.css';
+import React, { Component } from 'react';
+import Foreground from '../Foreground/Foreground';
+import HelloMessage from '../HelloMessage/HelloMessage';
 
-const SplashScreen = () => (
-  <div className={`${Style.transition} ${Style.foreground}`} />
-);
+class SplashScreen extends Component {
+  constructor() {
+    super();
+    this.state = {
+      doneWriting: false,
+    };
+    this.isDoneWriting = this.isDoneWriting.bind(this);
+  }
+
+  isDoneWriting() {
+    this.setState({ doneWriting: true });
+  }
+
+  render() {
+    const { doneWriting } = this.state;
+
+    return (
+      <>
+        <Foreground doneWriting={doneWriting} />
+        <HelloMessage handler={this.isDoneWriting} />
+      </>
+    );
+  }
+}
 
 export default SplashScreen;
