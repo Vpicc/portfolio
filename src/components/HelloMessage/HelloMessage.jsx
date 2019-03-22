@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Typist from 'react-typist';
-import Style from '../css/HelloMessage/style.css';
+import Style from './style.css';
 
 const HelloMessage = () => (
   <h1 className={Style.hello}>

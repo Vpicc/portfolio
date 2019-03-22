@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloMessage from './components/container/HelloMessage';
+import HelloMessage from './components/HelloMessage/HelloMessage';
+import SplashScreen from './components/SplashScreen/SplashScreen';
 
 const App = () => (
-  <HelloMessage />
+  <div>
+    <HelloMessage />
+    <SplashScreen />
+  </div>
 );
 
 const wrapper = document.getElementById('root');

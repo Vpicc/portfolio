@@ -1,0 +1,31 @@
+.foreground {
+    position: fixed;
+    left: 50%;
+	top: 50%;
+    width: 150vmax;
+    height: 150vmax;
+    border-radius: 100%;
+    z-index: 1;
+    background-color: red;
+    transform: translate(-50%, -50%);
+}
+
+.transition {
+    animation-name: expand;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+@keyframes expand {
+    from {
+        width: 0vmin;
+        height: 0vmin;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 1);
+    }
+
+    to {
+        width: 150vmax;
+        height: 150vmax;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 1);
+    }
+}
