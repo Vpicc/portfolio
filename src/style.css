@@ -5,7 +5,7 @@ body {
 }
 
 #gradient-background {
-    background-image: linear-gradient(135deg, white, #68e497);
+    background-image: linear-gradient(135deg, rgb(170, 203, 233), rgb(56, 161, 118));
     background-repeat: no-repeat;
     position: fixed;
     width: 100%;
@@ -15,6 +15,8 @@ body {
 
 a {
     color: black;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 a:hover {

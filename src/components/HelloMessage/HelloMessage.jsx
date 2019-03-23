@@ -36,7 +36,7 @@ class HelloMessage extends Component {
       </h1>
     );
   }
-};
+}
 
 HelloMessage.propTypes = {
   handler: PropTypes.func.isRequired,
