@@ -33,18 +33,20 @@ const Experience = () => (
     </Card>
     <Card
       classes="col-md-6"
-      title="Drawphone"
+      title="CThreads"
       subTitle=""
-      link="https://www.google.com"
+      link="https://github.com/Vpicc/cthreads"
     >
-      Lorem ipsum
+      A program made for Operational Systems course. It is a simplified implementation of a multithreading library in C,
+       based on a priority scheduler.
     </Card>
     <Card
       classes="col-md-6"
-      title="Drawphone"
+      title="TextoMusical"
       subTitle=""
+      link="https://github.com/Vpicc/TextoMusical"
     >
-      Lorem ipsum
+      A simple Java program that translates a text into a song in MIDI format. It was made for Program Construction Techniques course.
     </Card>
   </div>
 );
