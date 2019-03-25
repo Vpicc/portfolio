@@ -1,32 +1,35 @@
 import React from 'react';
 import Card from '../Card/Card';
-import { firstPopUp } from './Popups';
+import { ufrgs, iit, owlbytes } from './Popups';
 
 const Experience = () => (
   <div className="row">
     <Card
       classes="col-md-4"
-      title="Drawphone"
+      title="Owlbytes"
+      logo="/src/static/Owlbytes.png"
       subTitle="Software Engineer Intern"
-      popUp={firstPopUp}
+      popUp={owlbytes}
     >
-      Summer 2018 - Seattle, WA
+      Jan. 2018 – Aug. 2018 : Porto Alegre, Brazil
     </Card>
     <Card
       classes="col-md-4"
-      title="Drawphone"
-      subTitle="Software Engineer Intern"
-      popUp={firstPopUp}
+      title="UFRGS"
+      logo="/src/static/UFRGS.png"
+      subTitle="Web Developer"
+      popUp={ufrgs}
     >
-      Summer 2018 - Seattle, WA
+      Apr. 2017 – Dec. 2017 : Porto Alegre, Brazil
     </Card>
     <Card
       classes="col-md-4"
-      title="Drawphone"
-      subTitle="Software Engineer Intern"
-      popUp={firstPopUp}
+      title="IIT"
+      logo="/src/static/iit.png"
+      subTitle="Summer Research Experience"
+      popUp={iit}
     >
-      Summer 2018 - Seattle, WA
+      May 2016 – July 2016 : Chicago, Illinois
     </Card>
     <Card
       classes="col-md-6"
@@ -34,28 +37,14 @@ const Experience = () => (
       subTitle=""
       link="https://www.google.com"
     >
-      Summer 2018 - Seattle, WA
+      Lorem ipsum
     </Card>
     <Card
       classes="col-md-6"
       title="Drawphone"
       subTitle=""
     >
-      Summer 2018 - Seattle, WA
-    </Card>
-    <Card
-      classes="col-md-6"
-      title="Drawphone"
-      subTitle=""
-    >
-      Summer 2018 - Seattle, WA
-    </Card>
-    <Card
-      classes="col-md-6"
-      title="Drawphone"
-      subTitle=""
-    >
-      Summer 2018 - Seattle, WA
+      Lorem ipsum
     </Card>
   </div>
 );

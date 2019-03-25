@@ -6,6 +6,7 @@ const Card = (props) => {
   const {
     classes,
     title,
+    logo,
     subTitle,
     children,
     popUp,
@@ -15,26 +16,38 @@ const Card = (props) => {
   return (
     <div className={`${classes} ${Style.cardCol}`}>
       <div className={`${Style.card}`}>
-        <div className={`${Style.cardTitle}`}>
-          {title}
-        </div>
+        {
+        (
+        logo
+          ? (
+            <div className={`${Style.imgSpace} justify-content-center`}>
+              <img src={logo} className={`${Style.companyLogo} align-self-center`} alt={title} />
+            </div>
+          )
+          : (
+            <div className={`${Style.cardTitle}`}>
+              {title}
+            </div>
+          )
+        )
+        }
         <div className={`${Style.cardSubTitle}`}>
           {subTitle}
         </div>
-        <div>
+        <div className={`${Style.cardText}`}>
           {children}
         </div>
         <div className={`${Style.cardButton}`}>
           {
-              (
-                popUp
-                  ? <button type="button" className="btn btn-outline-dark" onClick={popUp}>More Info</button>
-                  : (
-                    <a href={link} target="_blank" rel="noopener noreferrer">
-                      <button type="button" className="btn btn-outline-dark">View on GitHub</button>
-                    </a>
-                  )
-              )
+            (
+              popUp
+                ? <button type="button" className="btn btn-outline-dark" onClick={popUp}>More Info</button>
+                : (
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <button type="button" className="btn btn-outline-dark">View on GitHub</button>
+                  </a>
+                )
+            )
           }
         </div>
       </div>
@@ -45,6 +58,7 @@ const Card = (props) => {
 Card.propTypes = {
   classes: PropTypes.string.isRequired,
   title: PropTypes.string,
+  logo: PropTypes.string,
   subTitle: PropTypes.string,
   popUp: PropTypes.func,
   link: PropTypes.string,
@@ -53,6 +67,7 @@ Card.propTypes = {
 
 Card.defaultProps = {
   title: '',
+  logo: '',
   subTitle: '',
   popUp: undefined,
   link: '',

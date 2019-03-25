@@ -28,9 +28,10 @@ class HelloMessage extends Component {
         <Typist
           cursor={{ show: true, hideWhenDone: true, hideWhenDoneDelay: 0 }}
           onTypingDone={this.typingIsDone}
+          avgTypingDelay={100}
         >
         Hello
-          <Typist.Delay ms={500} />
+          <Typist.Delay ms={600} />
         , I'm Victor.
         </Typist>
       </h1>
