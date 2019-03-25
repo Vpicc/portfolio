@@ -37,7 +37,8 @@ const Experience = () => (
       subTitle=""
       link="https://github.com/Vpicc/cthreads"
     >
-      A program made for Operational Systems course. It is a simplified implementation of a multithreading library in C,
+      A program made for Operational Systems course.
+       It is a simplified implementation of a multithreading library in C,
        based on a priority scheduler.
     </Card>
     <Card
@@ -46,7 +47,8 @@ const Experience = () => (
       subTitle=""
       link="https://github.com/Vpicc/TextoMusical"
     >
-      A simple Java program that translates a text into a song in MIDI format. It was made for Program Construction Techniques course.
+      A simple Java program that translates a text into a song in MIDI format.
+       It was made for Program Construction Techniques course.
     </Card>
   </div>
 );
