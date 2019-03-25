@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://vpicc.github.io/portfolio/",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "production": "webpack --mode production && node server.js",
     "start": "webpack-dev-server --open --mode development"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
@@ -31,7 +32,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

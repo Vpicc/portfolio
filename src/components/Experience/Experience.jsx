@@ -1,13 +1,16 @@
 import React from 'react';
 import Card from '../Card/Card';
 import { ufrgs, iit, owlbytes } from './Popups';
+import owlbytesLogo from '../../static/Owlbytes.png';
+import ufrgsLogo from '../../static/UFRGS.png';
+import iitLogo from '../../static/iit.png';
 
 const Experience = () => (
   <div className="row">
     <Card
       classes="col-md-4"
       title="Owlbytes"
-      logo="/src/static/Owlbytes.png"
+      logo={owlbytesLogo}
       subTitle="Software Engineer Intern"
       popUp={owlbytes}
     >
@@ -16,7 +19,7 @@ const Experience = () => (
     <Card
       classes="col-md-4"
       title="UFRGS"
-      logo="/src/static/UFRGS.png"
+      logo={ufrgsLogo}
       subTitle="Web Developer"
       popUp={ufrgs}
     >
@@ -25,7 +28,7 @@ const Experience = () => (
     <Card
       classes="col-md-4"
       title="IIT"
-      logo="/src/static/iit.png"
+      logo={iitLogo}
       subTitle="Summer Research Experience"
       popUp={iit}
     >

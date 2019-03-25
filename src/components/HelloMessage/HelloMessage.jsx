@@ -1,8 +1,11 @@
+/* eslint-disable import/no-webpack-loader-syntax */
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import Typist from 'react-typist';
 import PropTypes from 'prop-types';
 import Style from './style.css';
+// eslint-disable-next-line import/no-unresolved
+import '!style-loader!css-loader!react-typist/dist/Typist.css';
 
 class HelloMessage extends Component {
   constructor() {

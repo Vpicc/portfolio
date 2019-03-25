@@ -1,4 +1,7 @@
 import Swal from 'sweetalert2';
+import cref from '../../static/cref.png';
+import trafficLights from '../../static/trafficLights.png';
+import owlbytesTeam from '../../static/OwlbytesTeam.png';
 
 function ufrgs() {
   const innerHTML = `<p>Developed a theme and plugins for WordPress that served as an educational tool. The theme is focused on
@@ -9,7 +12,7 @@ function ufrgs() {
     html: innerHTML,
     showConfirmButton: false,
     showCloseButton: true,
-    imageUrl: '/src/static/cref.png',
+    imageUrl: cref,
   });
 }
 
@@ -22,7 +25,7 @@ function iit() {
     html: innerHTML,
     showConfirmButton: false,
     showCloseButton: true,
-    imageUrl: '/src/static/trafficLights.png',
+    imageUrl: trafficLights,
   });
 }
 
@@ -38,7 +41,7 @@ function owlbytes() {
     html: innerHTML,
     showConfirmButton: false,
     showCloseButton: true,
-    imageUrl: '/src/static/OwlbytesTeam.png',
+    imageUrl: owlbytesTeam,
   });
 }
 
