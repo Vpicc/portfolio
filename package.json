@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://vpicc.github.io/portfolio/",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
